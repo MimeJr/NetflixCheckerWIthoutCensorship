@@ -16,8 +16,8 @@
       "descs_html": [
         "<h4>⚠️ 该脚本仅支持 QuanX 598+ 版本</h4>",
         "<h5>1. 配置 Netflix 分流规则，并关联策略组（默认策略组为：Netflix，可在 BoxJs 中修改），支持策略组嵌套，但是只检测类型为 static 的子策略组</h5>",
-        "<h5>2. （可选）在 BoxJs 中订阅 <a href=\"https://raw.githubusercontent.com/MimeJr/NetflixCheckerWIthoutCensorship/main/task.json\">脚本集合</a></h5>",
-        "<h5>3. 在 task gallery 中订阅 <a href=\"https://raw.githubusercontent.com/MimeJr/NetflixCheckerWIthoutCensorship/main/task.json\">脚本集合</a></h5>",
+        "<h5>2. （可选）在 BoxJs 中订阅 <a href=\"https://raw.githubusercontent.com/MimeJr/NetflixCheckerWithoutCensorship/main/task.json\">脚本集合</a></h5>",
+        "<h5>3. 在 task gallery 中订阅 <a href=\"https://raw.githubusercontent.com/MimeJr/NetflixCheckerWithoutCensorship/main/task.json\">脚本集合</a></h5>",
         "<h5>4. （可选）在 BoxJs 中配置分流策略组名称，以及其他参数</h5>",
         "<h5>5. 必须先运行一次「解锁检测」脚本，后续该脚本会定时执行</h5>",
         "<h5>6. 在 BoxJs 或 QuanX 中运行「策略切换」即可自动切换策略</h5>"
@@ -76,15 +76,15 @@
       "scripts": [
         {
           "name": "Netflix 解锁检测",
-          "script": "https://raw.githubusercontent.com/MimeJr/NetflixCheckerWIthoutCensorship/main/checker.js"
+          "script": "https://raw.githubusercontent.com/MimeJr/NetflixCheckerWithoutCensorship/main/checker.js"
         },
         {
           "name": "Netflix 策略切换",
-          "script": "https://raw.githubusercontent.com/MimeJr/NetflixCheckerWIthoutCensorship/main/switcher.js"
+          "script": "https://raw.githubusercontent.com/MimeJr/NetflixCheckerWithoutCensorship/main/switcher.js"
         }
       ],
       "author": "@MimeJr",
-      "repo": "https://github.com/MimeJr/NetflixCheckerWIthoutCensorship",
+      "repo": "https://github.com/MimeJr/NetflixCheckerWithoutCensorship",
       "icons": [
         "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix_Letter.png",
         "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png"
@@ -93,10 +93,10 @@
   ],
   "task": [
     {
-      "config": "0 */2 * * * https://raw.githubusercontent.com/MimeJr/NetflixCheckerWIthoutCensorship/main/checker.js, tag=Netflix 解锁检测, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png, enabled=true"
+      "config": "0 */2 * * * https://raw.githubusercontent.com/MimeJr/NetflixCheckerWithoutCensorship/main/checker.js, tag=Netflix 解锁检测, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png, enabled=true"
     },
     {
-      "config": "0 0 29 2 * https://raw.githubusercontent.com/MimeJr/NetflixCheckerWIthoutCensorship/main/switcher.js, tag=Neflix 策略切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png, enabled=false"
+      "config": "0 0 29 2 * https://raw.githubusercontent.com/MimeJr/NetflixCheckerWithoutCensorship/main/switcher.js, tag=Neflix 策略切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png, enabled=false"
     }
   ]
 }
